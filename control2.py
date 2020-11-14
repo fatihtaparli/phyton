@@ -1,0 +1,17 @@
+from tkinter import *
+import datetime
+myApp=Tk()
+myApp.title("Malicious IP Control App")
+B=Button(myApp,text="Control",command=control)
+B.place(x=80,y=80)
+B.pack()
+label_1=Label(top,text="Please write an IP Addres in order to control:")
+label_1=Place(x=80,y=120)
+label_1.pack()
+entry_1=Entry(myApp)
+entry_1.place(x=80,y=140)
+entry_1.pack()
+v=StringVar()
+entry_2=Entry(top,textvariable=v)
+entry_2.place(x=80,y=160)
+entry_2.pack()
